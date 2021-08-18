@@ -81,3 +81,4 @@ while True:
         print(l)
     else:
         print("Нет такого решения")
+    break
