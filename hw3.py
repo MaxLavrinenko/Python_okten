@@ -5,32 +5,32 @@
 # запишите 5 тудушек
 # и выведете все
 # 2) протипизировать первое задание
-from typing import Callable, List
-
-
-def notebook() -> Callable:
-    todo_list: list = []
-
-    def add_todo(todo: str) -> List:
-        nonlocal todo_list
-        todo_list.append(todo)
-
-        def get_all() -> None:
-            nonlocal todo_list
-            print(todo_list)
-
-        get_all()
-        return todo_list
-
-    return add_todo
-
-
-nb = notebook()
-nb('wake up')
-nb('go breakfast')
-nb('go to work')
-nb('kill the people')
-nb('do homework')
+# from typing import Callable, List
+#
+#
+# def notebook() -> Callable:
+#     todo_list: list = []
+#
+#     def add_todo(todo: str) -> List:
+#         nonlocal todo_list
+#         todo_list.append(todo)
+#
+#         def get_all() -> None:
+#             nonlocal todo_list
+#             print(todo_list)
+#
+#         get_all()
+#         return todo_list
+#
+#     return add_todo
+#
+#
+# nb = notebook()
+# nb('wake up')
+# nb('go breakfast')
+# nb('go to work')
+# nb('kill the people')
+# nb('do homework')
 
 # 3) С помощью lambda функции извлеките из списка числа, делимые на 15 без остатка.
 # l = [15, 25, 30, 60, 120, 20]
