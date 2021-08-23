@@ -14,7 +14,7 @@
 # '4' -> 2
 # """
 # st = input('Введите стрингу: ')
-# for i in st:
+# for i in set(st):
 #     print(i,'->' ,st.count(i))
 ########
 #
